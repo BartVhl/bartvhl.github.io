@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bart – Who am I?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      max-width: 800px;
+      width: 100%;
+      background: #020617;
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      border: 1px solid #1f2937;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin: 24px 0 8px;
+      color: #38bdf8;
+    }
+    p { margin-bottom: 10px; color: #d1d5db; }
+    .tagline { color: #9ca3af; margin-bottom: 18px; }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .chip {
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid #4b5563;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+    }
+    .links {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      border: 1px solid #38bdf8;
+      font-size: 0.9rem;
+      transition: background 0.15s, color 0.15s, transform 0.1s;
+    }
+    .btn.primary {
+      background: #38bdf8;
+      color: #020617;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      background: #0ea5e9;
+      color: #020617;
+    }
+    ul {
+      list-style: none;
+      margin-top: 6px;
+    }
+    li::before {
+      content: "• ";
+      color: #38bdf8;
+    }
+    @media (max-width: 600px) {
+      .card { padding: 20px; }
+      h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Who am I?</h1>
+      <p class="tagline">Junior software developer with a skill-focused degree in programming.</p>
+    </header>
+
+    <section>
+      <h2>About me</h2>
+      <p>
+        I’m Bart, a graduate of the two-year
+        <strong>Graduaat Programmeren</strong> at <strong>Howest Brugge</strong>.
+        I enjoy turning ideas into working software and learning new technologies by building real projects.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I studied</h2>
+      <p>
+        My degree was very practical and technical: lots of hands-on programming,
+        group projects and an internship where I could apply my skills in a professional environment.
+      </p>
+      <div class="chips">
+        <span class="chip">Problem solving</span>
+        <span class="chip">Teamwork</span>
+        <span class="chip">Clean code</span>
+        <span class="chip">Professional workflows</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Portfolio (selected projects)</h2>
+      <ul>
+        <li><strong>Project 1:</strong> Short description of a group project you’re proud of.</li>
+        <li><strong>Project 2:</strong> Another project (school or personal) that shows your skills.</li>
+        <li><strong>Internship:</strong> What you built or helped with during your internship.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, you can reach me here:</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:your.new.email@example.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-linkedin/" target="_blank">LinkedIn</a>
+        <!-- Add a GitHub link if you like -->
+        <!-- <a class="btn" href="https://github.com/yourusername" target="_blank">GitHub</a> -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
