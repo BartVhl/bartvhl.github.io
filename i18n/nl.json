@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "hobbies": "Hobby’s",
+    "education": "Opleiding"
+  },
+  "shared": {
+    "splitAlt": "Decoratieve achtergrond"
+  },
+  "footer": {
+    "name": "Vanhuffel Bart",
+    "year": "2024"
+  },
+  "home": {
+    "metaTitle": "Home — Bart",
+    "title": "Vanhuffel<br/>Bart",
+    "intro": "Hey! Ik ben Bart, een student Graduaat Programmeren met focus op web development. Ik hou van duidelijke interfaces, nette code en projecten die écht af voelen. In mijn vrije tijd ben ik vaak met vrienden op pad, luister ik naar muziek, ga ik sporten of game ik.",
+    "heroAlt": "Portretfoto van Bart",
+    "educationHeading": "Opleiding",
+    "hobbiesHeading": "Hobby’s",
+    "educationAlt": "Programmeren op computer",
+    "gamingAlt": "Game controller",
+    "fitnessAlt": "Fitness gewichten"
+  },
+  "hobbies": {
+    "metaTitle": "Hobby’s — Bart",
+    "title": "Hobby’s",
+    "lead": "Twee dingen waar ik altijd energie uit haal: gamen en fitness.",
+    "gamingAlt": "Game controller",
+    "fitnessAlt": "Fitness gewichten"
+  },
+  "gaming": {
+    "metaTitle": "Gaming — Bart",
+    "title": "Gaming",
+    "lead": "Gaming is al van kinds af aan een vaste hobby. Ik speel op PC, PlayStation en Switch, en ik hou vooral van fantasy- en story-driven games waar je echt in kan verdwijnen.",
+    "heroAlt": "Game controller",
+    "whyTitle": "Waarom gaming?",
+    "whyBody": "Ik begon door mijn stiefvader, en sinds ik als kind voor het eerst zelf mocht spelen is het gebleven. Voor mij is het ontspanning, inspiratie en soms gewoon even ontsnappen naar een andere wereld.",
+    "topTitle": "Mijn top 3 games",
+    "rank1": "Bloodborne",
+    "rank2": "Final Fantasy XIV",
+    "rank3": "Persona 3 Reload",
+    "rank1Alt": "Bloodborne cover",
+    "rank2Alt": "Final Fantasy XIV cover",
+    "rank3Alt": "Persona 3 Reload cover",
+    "honorableTitle": "Eervolle vermeldingen",
+    "hm": {
+      "bg3": "Baldur’s Gate 3",
+      "cp2077": "Cyberpunk 2077",
+      "dos2": "Divinity: Original Sin 2",
+      "elden": "Elden Ring",
+      "ff16": "Final Fantasy XVI",
+      "mhw": "Monster Hunter World",
+      "oblivion": "The Elder Scrolls IV: Oblivion",
+      "sekiro": "Sekiro: Shadows Die Twice"
+    }
+  },
+  "fitness": {
+    "metaTitle": "Fitness — Bart",
+    "title": "Fitness",
+    "lead": "Fitness is voor mij een praktische manier om gezonder te leven: sterker worden, meer energie hebben en mentaal scherp blijven. Het voelt goed om vooruitgang te zien, hoe klein ook.",
+    "heroAlt": "Fitness gewichten",
+    "whyTitle": "Waarom fitness?",
+    "whyBody": "Ik begon ooit door een vriend, en het werd iets dat me helpt met discipline en balans. Ik heb periodes gehad met ‘op en af’, maar nu ik dicht bij een gym woon lukt consistent trainen veel beter.",
+    "topTitle": "Mijn top oefeningen",
+    "rank1": "Dumbbell curls",
+    "rank2": "Bench press",
+    "rank3": "Lat pulldown",
+    "rank1Alt": "Dumbbell curls oefening",
+    "rank2Alt": "Bench press oefening",
+    "rank3Alt": "Lat pulldown oefening"
+  },
+  "education": {
+    "metaTitle": "Opleiding — Bart",
+    "title": "Graduaat<br/>Programmeren",
+    "body": "Ik deed de studie Graduaat Programmeren omdat ik graag bouw aan digitale producten. Na verschillende jobs merkte ik dat ik altijd terugkeerde naar computers en technologie. Software development voelt voor mij als de perfecte mix van creativiteit en logisch denken.",
+    "heroAlt": "Programmeren op computer"
+  },
+  "portfolio": {
+    "metaTitle": "Portfolio — Bart",
+    "badge": "Projecten",
+    "title": "Portfolio",
+    "lead": "Een selectie van projecten waar ik trots op ben, met de focus op wat ik geleerd heb en hoe ik gewerkt heb.",
+    "tags": {
+      "frontend": "Frontend",
+      "architecture": "Architectuur"
+    },
+    "projects": {
+      "gleenie": {
+        "name": "Gleenie.org",
+        "imageAlt": "Screenshot van Gleenie.org",
+        "description": "Gleenie.org is een duurzaam programmeerproject gebouwd in Laravel met een Tailwind-frontend. Het was een grote leerkans op vlak van frontend: werken met UI-blocks en implementeren op basis van een design document."
+      },
+      "ict21": {
+        "name": "ICT21",
+        "imageAlt": "Screenshot van ICT21",
+        "description": "ICT21 is een Laravel-project met een CMS-systeem in de backend. Het opzetten hiervan vroeg een diep begrip van Filament resources. Daarnaast werkte ik met Livewire voor het contactformulier — een nieuwe ervaring die ik echt waardeerde."
+      },
+      "gogomon": {
+        "name": "Gogomon",
+        "imageAlt": "Screenshot van Gogomon",
+        "description": "Gogomon is een fitness app voor mobiel en smartwatch die ik in team maakte. We planden de database en API, deden platformonderzoek, en bouwden vooral in .NET MAUI. Uiteindelijk maakten we ook een Wear OS-side. We leerden bovendien veel over GDPR, wat een belangrijk leermoment was."
+      },
+      "deckbuilder": {
+        "name": "Deckbuilder",
+        "imageAlt": "Screenshot van Deckbuilder",
+        "description": "Mijn Deckbuilder MVC web app maakte ik om REST API’s beter te leren. Ik werkte met request- en result-modellen en leerde veel over loose coupling. De app leerde me ook veel over sessions en JWT tokens, wat ik bijzonder interessant vond."
+      }
+    }
+  }
+}
