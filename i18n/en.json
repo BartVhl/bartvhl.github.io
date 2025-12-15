@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "portfolio": "Portfolio",
+    "skills": "Skillset",
     "hobbies": "Hobbies",
     "education": "Education"
   },
@@ -15,7 +16,7 @@
   "home": {
     "metaTitle": "Home — Bart",
     "title": "Vanhuffel<br/>Bart",
-    "intro": "Hey! I’m Bart, a Programming student focused on web development. I like clean interfaces, tidy code, and projects that feel truly finished. Outside of coding, you’ll usually find me hanging out with friends, listening to music, working out, or gaming.",
+    "intro": "Hey! I’m Bart, a programmer focused on full-stack development. I like clean interfaces, tidy code, and projects that feel truly finished. Outside of coding, you’ll usually find me hanging out with friends, listening to music, working out, or gaming.",
     "heroAlt": "Portrait photo of Bart",
     "educationHeading": "Education",
     "hobbiesHeading": "Hobbies",
@@ -107,6 +108,28 @@
         "imageAlt": "Screenshot of Deckbuilder",
         "description": "My Deckbuilder MVC web app was created to learn REST APIs. I worked with request and result models and learned a ton about loose coupling. The app also taught me a lot about sessions and JWT tokens, which I found particularly interesting."
       }
+    }
+  },
+  "skills": {
+    "metaTitle": "Skillset — Bart",
+    "badge": "Skillset",
+    "title": "Skillset",
+    "lead": "An overview of technologies and concepts I actively work with or have built experience in.",
+    "primary": {
+      "title": "Primary stack",
+      "description": "Technologies I work with most and can confidently use in real projects."
+    },
+    "secondary": {
+      "title": "Secondary experience",
+      "description": "Technologies I have solid hands-on experience with, but that are not my daily stack."
+    },
+    "concepts": {
+      "title": "Concepts & practices",
+      "description": "Fundamental concepts that appear throughout my projects and way of working."
+    },
+    "learning": {
+      "title": "Currently learning",
+      "description": "Topics I am actively exploring and improving."
     }
   }
 }

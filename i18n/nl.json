@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "portfolio": "Portfolio",
+    "skills": "Skillset",
     "hobbies": "Hobby’s",
     "education": "Opleiding"
   },
@@ -15,7 +16,7 @@
   "home": {
     "metaTitle": "Home — Bart",
     "title": "Vanhuffel<br/>Bart",
-    "intro": "Hey! Ik ben Bart, een student Graduaat Programmeren met focus op web development. Ik hou van duidelijke interfaces, nette code en projecten die écht af voelen. In mijn vrije tijd ben ik vaak met vrienden op pad, luister ik naar muziek, ga ik sporten of game ik.",
+    "intro": "Hey! Ik ben Bart, een programmer met focus op full-stack development. Ik hou van duidelijke interfaces, nette code en projecten die écht af voelen. In mijn vrije tijd ben ik vaak met vrienden op pad, luister ik naar muziek, ga ik sporten of game ik.",
     "heroAlt": "Portretfoto van Bart",
     "educationHeading": "Opleiding",
     "hobbiesHeading": "Hobby’s",
@@ -107,6 +108,28 @@
         "imageAlt": "Screenshot van Deckbuilder",
         "description": "Mijn Deckbuilder MVC web app maakte ik om REST API’s beter te leren. Ik werkte met request- en result-modellen en leerde veel over loose coupling. De app leerde me ook veel over sessions en JWT tokens, wat ik bijzonder interessant vond."
       }
+    }
+  },
+  "skills": {
+    "metaTitle": "Skillset — Bart",
+    "badge": "Skillset",
+    "title": "Skillset",
+    "lead": "Een overzicht van technologieën en concepten waar ik actief mee werk of ervaring in heb opgebouwd.",
+    "primary": {
+      "title": "Primary stack",
+      "description": "Technologieën waar ik het meest mee werk en waar ik direct inzetbaar mee ben in projecten."
+    },
+    "secondary": {
+      "title": "Secondary experience",
+      "description": "Technologieën waarmee ik praktische ervaring heb, maar die niet mijn dagelijkse stack zijn."
+    },
+    "concepts": {
+      "title": "Concepten & werkwijzen",
+      "description": "Fundamentele concepten die terugkomen in mijn projecten en manier van werken."
+    },
+    "learning": {
+      "title": "Momenteel aan het bijleren",
+      "description": "Onderwerpen waar ik me momenteel verder in verdiep."
     }
   }
 }
