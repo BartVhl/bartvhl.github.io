@@ -32,10 +32,18 @@ function applyTranslations(dict) {
     const val = deepGet(dict, key);
     if (val == null) return;
 
-    // allow <br> etc in translations
     el.innerHTML = String(val);
   });
+  const titleEl = document.querySelector("title[data-i18n]");
+  if (titleEl) {
+    const key = titleEl.getAttribute("data-i18n");
+    const val = deepGet(dict, key);
+    if (val != null) {
+      document.title = String(val).replace(/<[^>]*>/g, "");
+    }
+  }
 }
+
 
 function setActiveLangUI(lang) {
   document.documentElement.setAttribute("lang", lang);
