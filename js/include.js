@@ -19,6 +19,9 @@ async function includePartials() {
       node.outerHTML = html;
     })
   );
+
+  // Let other scripts (like i18n) know partials are now in the DOM
+  document.dispatchEvent(new Event("partials:loaded"));
 }
 
 function markActiveLink() {
@@ -30,6 +33,7 @@ function markActiveLink() {
     if (abs === path) a.setAttribute("aria-current", "page");
   });
 }
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     await includePartials();
@@ -38,4 +42,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error(e);
   }
 });
-

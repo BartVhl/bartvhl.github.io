@@ -37,7 +37,7 @@
     "lead": "Gaming is al van kinds af aan een vaste hobby. Ik speel op PC, PlayStation en Switch, en ik hou vooral van fantasy- en story-driven games waar je echt in kan verdwijnen.",
     "heroAlt": "Game controller",
     "whyTitle": "Waarom gaming?",
-    "whyBody": "Ik begon door mijn stiefvader, en sinds ik als kind voor het eerst zelf mocht spelen is het gebleven. Voor mij is het ontspanning, inspiratie en soms gewoon even ontsnappen naar een andere wereld.",
+    "whyBody": "Ik kom in gaming terecht door mijn stiefvader, en zodra ik als kind zelf een controller in handen krijg blijft het hangen. Voor mij is het ontspanning, inspiratie en soms gewoon even ontsnappen naar een andere wereld.",
     "topTitle": "Mijn top 3 games",
     "rank1": "Bloodborne",
     "rank2": "Final Fantasy XIV",
@@ -63,7 +63,7 @@
     "lead": "Fitness is voor mij een praktische manier om gezonder te leven: sterker worden, meer energie hebben en mentaal scherp blijven. Het voelt goed om vooruitgang te zien, hoe klein ook.",
     "heroAlt": "Fitness gewichten",
     "whyTitle": "Waarom fitness?",
-    "whyBody": "Ik begon ooit door een vriend, en het werd iets dat me helpt met discipline en balans. Ik heb periodes gehad met ‘op en af’, maar nu ik dicht bij een gym woon lukt consistent trainen veel beter.",
+    "whyBody": "Ik begin ooit door een vriend, en het wordt iets dat me helpt met discipline en balans. Ik heb periodes met ‘op en af’, maar nu ik dicht bij een gym woon lukt consistent trainen veel beter.",
     "topTitle": "Mijn top oefeningen",
     "rank1": "Dumbbell curls",
     "rank2": "Bench press",
@@ -75,14 +75,14 @@
   "education": {
     "metaTitle": "Opleiding — Bart",
     "title": "Graduaat<br/>Programmeren",
-    "body": "Ik deed de studie Graduaat Programmeren omdat ik graag bouw aan digitale producten. Na verschillende jobs merkte ik dat ik altijd terugkeerde naar computers en technologie. Software development voelt voor mij als de perfecte mix van creativiteit en logisch denken.",
+    "body": "Ik volg de opleiding Graduaat Programmeren omdat ik graag bouw aan digitale producten. Ik probeer verschillende jobs, maar ik keer altijd terug naar computers en technologie. Software development voelt voor mij als de perfecte mix van creativiteit en logisch denken.",
     "heroAlt": "Programmeren op computer"
   },
   "portfolio": {
     "metaTitle": "Portfolio — Bart",
     "badge": "Projecten",
     "title": "Portfolio",
-    "lead": "Een selectie van projecten waar ik trots op ben, met de focus op wat ik geleerd heb en hoe ik gewerkt heb.",
+    "lead": "Een selectie van projecten waar ik trots op ben, met de focus op wat ik leerde.",
     "tags": {
       "frontend": "Frontend",
       "architecture": "Architectuur"
@@ -91,22 +91,22 @@
       "gleenie": {
         "name": "Gleenie.org",
         "imageAlt": "Screenshot van Gleenie.org",
-        "description": "Gleenie.org is een duurzaam programmeerproject gebouwd in Laravel met een Tailwind-frontend. Het was een grote leerkans op vlak van frontend: werken met UI-blocks en implementeren op basis van een design document."
+        "description": "Gleenie.org is een duurzaam programmeerproject gebouwd in Laravel met een Tailwind-frontend. Het is een grote leerkans op vlak van frontend, waarbij ik werk met UI-blocks en implementeer op basis van een design document."
       },
       "ict21": {
         "name": "ICT21",
         "imageAlt": "Screenshot van ICT21",
-        "description": "ICT21 is een Laravel-project met een CMS-systeem in de backend. Het opzetten hiervan vroeg een diep begrip van Filament resources. Daarnaast werkte ik met Livewire voor het contactformulier — een nieuwe ervaring die ik echt waardeerde."
+        "description": "ICT21 is een Laravel-project met een CMS-systeem in de backend. Het opzetten hiervan vraagt een sterk begrip van Filament resources. Daarnaast werk ik met Livewire voor het contactformulier."
       },
       "gogomon": {
         "name": "Gogomon",
         "imageAlt": "Screenshot van Gogomon",
-        "description": "Gogomon is een fitness app voor mobiel en smartwatch die ik in team maakte. We planden de database en API, deden platformonderzoek, en bouwden vooral in .NET MAUI. Uiteindelijk maakten we ook een Wear OS-side. We leerden bovendien veel over GDPR, wat een belangrijk leermoment was."
+        "description": "Gogomon is een fitness app voor mobiel en smartwatch die ik in team bouw. We plannen de database en API, doen platformonderzoek en bouwen voornamelijk in .NET MAUI. We maken ook een Wear OS-versie en houden actief rekening met GDPR."
       },
       "deckbuilder": {
         "name": "Deckbuilder",
         "imageAlt": "Screenshot van Deckbuilder",
-        "description": "Mijn Deckbuilder MVC web app maakte ik om REST API’s beter te leren. Ik werkte met request- en result-modellen en leerde veel over loose coupling. De app leerde me ook veel over sessions en JWT tokens, wat ik bijzonder interessant vond."
+        "description": "Deckbuilder is een MVC web app die ik gebruik om REST API’s te leren. Ik werk met request- en result-modellen en verdiep me in loose coupling. De app geeft me ook praktische ervaring met sessions en JWT tokens."
       }
     }
   },
@@ -114,14 +114,14 @@
     "metaTitle": "Skillset — Bart",
     "badge": "Skillset",
     "title": "Skillset",
-    "lead": "Een overzicht van technologieën en concepten waar ik actief mee werk of ervaring in heb opgebouwd.",
+    "lead": "Een overzicht van technologieën en concepten waar ik actief mee werk of ervaring in opbouw.",
     "primary": {
       "title": "Primary stack",
-      "description": "Technologieën waar ik het meest mee werk en waar ik direct inzetbaar mee ben in projecten."
+      "description": "Technologieën waar ik het meest mee werk en die ik vlot inzet in projecten."
     },
     "secondary": {
       "title": "Secondary experience",
-      "description": "Technologieën waarmee ik praktische ervaring heb, maar die niet mijn dagelijkse stack zijn."
+      "description": "Technologieën waarmee ik actief werk, maar die niet tot mijn dagelijkse stack behoren."
     },
     "concepts": {
       "title": "Concepten & werkwijzen",
@@ -129,7 +129,7 @@
     },
     "learning": {
       "title": "Momenteel aan het bijleren",
-      "description": "Onderwerpen waar ik me momenteel verder in verdiep."
+      "description": "Onderwerpen waar ik me actief verder in verdiep."
     }
   }
 }

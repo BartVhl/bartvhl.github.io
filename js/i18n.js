@@ -11,39 +11,58 @@ function getSavedLang() {
   return DEFAULT_LANG;
 }
 
+function getBasePath() {
+  const depth = location.pathname.split("/").filter(Boolean).length - 1;
+  return depth <= 0 ? "" : "../".repeat(depth);
+}
+
 async function loadTranslations(lang) {
   const res = await fetch(`${getBasePath()}i18n/${lang}.json`, { cache: "no-store" });
   if (!res.ok) throw new Error(`Missing i18n/${lang}.json`);
   return res.json();
 }
 
-function getBasePath() {
-  const depth = location.pathname.split("/").filter(Boolean).length - 1;
-  return depth <= 0 ? "" : "../".repeat(depth);
-}
-
 function deepGet(obj, key) {
-  return key.split(".").reduce((acc, part) => (acc && acc[part] != null ? acc[part] : null), obj);
+  return key
+    .split(".")
+    .reduce((acc, part) => (acc && acc[part] != null ? acc[part] : null), obj);
 }
 
 function applyTranslations(dict) {
+
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     const val = deepGet(dict, key);
     if (val == null) return;
-
     el.innerHTML = String(val);
   });
+
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
+    const spec = (el.getAttribute("data-i18n-attr") || "")
+      .split(";")
+      .map((s) => s.trim())
+      .filter(Boolean);
+
+    for (const pair of spec) {
+      const [attr, key] = pair.split(":").map((s) => s.trim());
+      if (!attr || !key) continue;
+
+      const val = deepGet(dict, key);
+      if (val == null) continue;
+
+      el.setAttribute(attr, String(val));
+    }
+  });
+
+
   const titleEl = document.querySelector("title[data-i18n]");
   if (titleEl) {
     const key = titleEl.getAttribute("data-i18n");
     const val = deepGet(dict, key);
-    if (val != null) {
-      document.title = String(val).replace(/<[^>]*>/g, "");
-    }
+    if (val != null) document.title = String(val).replace(/<[^>]*>/g, "");
   }
 }
-
 
 function setActiveLangUI(lang) {
   document.documentElement.setAttribute("lang", lang);
@@ -55,6 +74,7 @@ function setActiveLangUI(lang) {
 
 async function setLang(lang) {
   if (!SUPPORTED.has(lang)) lang = DEFAULT_LANG;
+
   localStorage.setItem("lang", lang);
 
   const dict = await loadTranslations(lang);
@@ -62,12 +82,19 @@ async function setLang(lang) {
   setActiveLangUI(lang);
 }
 
+
 document.addEventListener("click", (e) => {
   const btn = e.target.closest(".lang-btn");
   if (!btn) return;
-  setLang(btn.dataset.lang);
+  setLang(btn.dataset.lang).catch(console.error);
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
-  setLang(getSavedLang()).catch((err) => console.error(err));
+  setLang(getSavedLang()).catch(console.error);
+});
+
+
+document.addEventListener("partials:loaded", () => {
+  setLang(getSavedLang()).catch(console.error);
 });
