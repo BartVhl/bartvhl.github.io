@@ -82,7 +82,7 @@
     "metaTitle": "Portfolio — Bart",
     "badge": "Projects",
     "title": "Portfolio",
-    "lead": "A selection of projects I’m proud of, focused on what I learned and how I approached the work.",
+    "lead": "A selection of projects I’m proud of, highlighting what I learned.",
     "tags": {
       "frontend": "Frontend",
       "architecture": "Architecture"
@@ -101,7 +101,7 @@
       "gogomon": {
         "name": "Gogomon",
         "imageAlt": "Screenshot of Gogomon",
-        "description": "Gogomon was a fitness mobile/smartwatch app I built in a team. We planned the database and API, researched platforms, and built primarily in .NET MAUI. We also shipped a Wear OS side. We learned a lot about GDPR as well, which was an important learning moment."
+        "description": "Gogomon is a fitness mobile/smartwatch app I built in a team. We planned the database and API, researched platforms, and built primarily in .NET MAUI. We also shipped a Wear OS side. We learned a lot about GDPR as well, which was an important learning moment."
       },
       "deckbuilder": {
         "name": "Deckbuilder",
