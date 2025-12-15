@@ -34,10 +34,10 @@
   "gaming": {
     "metaTitle": "Gaming — Bart",
     "title": "Gaming",
-    "lead": "Gaming is a long-time hobby for me. I play on PC, PlayStation, and Switch, and I especially enjoy fantasy and story-driven games you can really get lost in.",
+    "lead": "Gaming has been a long-time hobby. I play on PC, PlayStation, and Switch, and I especially enjoy fantasy and story-driven games you can really get lost in.",
     "heroAlt": "Game controller",
     "whyTitle": "Why gaming?",
-    "whyBody": "I get into gaming through my stepfather, and once I get my hands on a controller as a kid, it sticks. For me it’s relaxation, inspiration, and sometimes simply escaping into another world.",
+    "whyBody": "I started because my stepfather played a lot, and once I got my hands on the controller as a kid it stuck. For me it’s relaxation, inspiration, and sometimes simply escaping into another world.",
     "topTitle": "My top 3 games",
     "rank1": "Bloodborne",
     "rank2": "Final Fantasy XIV",
@@ -63,7 +63,7 @@
     "lead": "Fitness is my straightforward way to stay healthy: get stronger, build energy, and keep my mind sharp. It feels great to see progress, even in small steps.",
     "heroAlt": "Gym weights",
     "whyTitle": "Why fitness?",
-    "whyBody": "I start because a friend invites me, and it becomes something that helps me stay disciplined and balanced. I have on-and-off periods, but living close to a gym makes it much easier to train consistently.",
+    "whyBody": "I started because a friend invited me, and it became something that helps me stay disciplined and balanced. I’ve had on-and-off periods, but living close to a gym makes it much easier to train consistently.",
     "topTitle": "My top exercises",
     "rank1": "Dumbbell curls",
     "rank2": "Bench press",
@@ -75,14 +75,14 @@
   "education": {
     "metaTitle": "Education — Bart",
     "title": "Programming<br/>Associate Degree",
-    "body": "I study programming because I enjoy building digital products. I explore different jobs, but I keep coming back to computers and technology. Software development feels like the perfect mix of creativity and problem-solving.",
+    "body": "I studied programming because I enjoy building digital products. After trying different jobs, I realized I always came back to computers and technology. Software development feels like the perfect mix of creativity and problem-solving.",
     "heroAlt": "Programming on a computer"
   },
   "portfolio": {
     "metaTitle": "Portfolio — Bart",
     "badge": "Projects",
     "title": "Portfolio",
-    "lead": "A selection of projects I’m proud of, highlighting what I learned.",
+    "lead": "A selection of projects I’m proud of, focused on what I learned and how I approached the work.",
     "tags": {
       "frontend": "Frontend",
       "architecture": "Architecture"
@@ -91,22 +91,22 @@
       "gleenie": {
         "name": "Gleenie.org",
         "imageAlt": "Screenshot of Gleenie.org",
-        "description": "Gleenie.org is a durable programming project built in Laravel with a Tailwind frontend. It’s a major frontend learning opportunity where I work with UI blocks and implement directly from a design document."
+        "description": "Gleenie.org is a durable programming project built in Laravel with a Tailwind frontend. It was a big learning opportunity on the frontend side: working with UI blocks and implementing from a design document."
       },
       "ict21": {
         "name": "ICT21",
         "imageAlt": "Screenshot of ICT21",
-        "description": "ICT21 is a Laravel-based project with a CMS system in the backend. Implementing it requires a strong understanding of Filament resources. I also work with Livewire for the contact form, which adds valuable hands-on experience."
+        "description": "ICT21 is a Laravel-based project with a CMS system in the backend. Implementing it required a deep understanding of Filament resources. On top of that, I worked with Livewire for the contact form — a new experience I really valued."
       },
       "gogomon": {
         "name": "Gogomon",
         "imageAlt": "Screenshot of Gogomon",
-        "description": "Gogomon is a fitness mobile and smartwatch app I build as part of a team. We plan the database and API, research platforms, and build primarily in .NET MAUI. We also ship a Wear OS version and actively work with GDPR considerations."
+        "description": "Gogomon was a fitness mobile/smartwatch app I built in a team. We planned the database and API, researched platforms, and built primarily in .NET MAUI. We also shipped a Wear OS side. We learned a lot about GDPR as well, which was an important learning moment."
       },
       "deckbuilder": {
         "name": "Deckbuilder",
         "imageAlt": "Screenshot of Deckbuilder",
-        "description": "Deckbuilder is an MVC web app I use to learn REST APIs. I work with request and result models and deepen my understanding of loose coupling. The app also gives me hands-on experience with sessions and JWT tokens."
+        "description": "My Deckbuilder MVC web app was created to learn REST APIs. I worked with request and result models and learned a ton about loose coupling. The app also taught me a lot about sessions and JWT tokens, which I found particularly interesting."
       }
     }
   },
@@ -114,14 +114,14 @@
     "metaTitle": "Skillset — Bart",
     "badge": "Skillset",
     "title": "Skillset",
-    "lead": "An overview of technologies and concepts I actively work with or build experience in.",
+    "lead": "An overview of technologies and concepts I actively work with or have built experience in.",
     "primary": {
       "title": "Primary stack",
-      "description": "Technologies I work with most and confidently use in real projects."
+      "description": "Technologies I work with most and can confidently use in real projects."
     },
     "secondary": {
       "title": "Secondary experience",
-      "description": "Technologies I actively use but that are not part of my daily stack."
+      "description": "Technologies I have solid hands-on experience with, but that are not my daily stack."
     },
     "concepts": {
       "title": "Concepts & practices",
@@ -129,7 +129,7 @@
     },
     "learning": {
       "title": "Currently learning",
-      "description": "Topics I actively explore and improve on."
+      "description": "Topics I am actively exploring and improving."
     }
   }
 }
