@@ -433,3 +433,19 @@ footer .container{
   }
 }
 
+.skill-grid{
+  display:flex;
+  flex-wrap: wrap;
+  gap:.6rem;
+  margin-top: .8rem;
+}
+
+.card.subtle{
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.04),
+    rgba(255,255,255,.02)
+  );
+}
+
+
