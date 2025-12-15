@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="portfolio.metaTitle">Portfolio — Bart</title>
+  <link rel="stylesheet" href="css/mainstyle.css" />
+</head>
+
+<body>
+  <div data-include="components/nav.html"></div>
+
+  <main class="container">
+    <section class="section">
+      <span class="badge" data-i18n="portfolio.badge">Projects</span>
+      <h1 data-i18n="portfolio.title">Portfolio</h1>
+      <p data-i18n="portfolio.lead"></p>
+    </section>
+
+    <section class="section portfolio-list">
+      <!-- Project 1 -->
+      <article class="card portfolio-item">
+        <div class="portfolio-media">
+          <img
+            src="images/Gleenie.jpg"
+            alt=""
+            data-i18n-attr="alt:portfolio.projects.gleenie.imageAlt"
+          />
+        </div>
+
+        <div class="card-pad">
+          <h2 data-i18n="portfolio.projects.gleenie.name">Gleenie.org</h2>
+          <p data-i18n="portfolio.projects.gleenie.description"></p>
+
+          <div class="pill-row">
+            <span class="pill">Laravel</span>
+            <span class="pill">Tailwind</span>
+            <span class="pill" data-i18n="portfolio.tags.frontend">Frontend</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card portfolio-item">
+        <div class="portfolio-media">
+          <img
+            src="images/ICT21.jpg"
+            alt=""
+            data-i18n-attr="alt:portfolio.projects.ict21.imageAlt"
+          />
+        </div>
+
+        <div class="card-pad">
+          <h2 data-i18n="portfolio.projects.ict21.name">ICT21</h2>
+          <p data-i18n="portfolio.projects.ict21.description"></p>
+
+          <div class="pill-row">
+            <span class="pill">Laravel</span>
+            <span class="pill">Filament</span>
+            <span class="pill">Livewire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card portfolio-item">
+        <div class="portfolio-media">
+          <img
+            src="images/Gogomon.jpg"
+            alt=""
+            data-i18n-attr="alt:portfolio.projects.gogomon.imageAlt"
+          />
+        </div>
+
+        <div class="card-pad">
+          <h2 data-i18n="portfolio.projects.gogomon.name">Gogomon</h2>
+          <p data-i18n="portfolio.projects.gogomon.description"></p>
+
+          <div class="pill-row">
+            <span class="pill">.NET MAUI</span>
+            <span class="pill">API</span>
+            <span class="pill">Wear OS</span>
+            <span class="pill">GDPR</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="card portfolio-item">
+        <div class="portfolio-media">
+          <img
+            src="images/Deckbuilder.jpg"
+            alt=""
+            data-i18n-attr="alt:portfolio.projects.deckbuilder.imageAlt"
+          />
+        </div>
+
+        <div class="card-pad">
+          <h2 data-i18n="portfolio.projects.deckbuilder.name">Deckbuilder</h2>
+          <p data-i18n="portfolio.projects.deckbuilder.description"></p>
+
+          <div class="pill-row">
+            <span class="pill">MVC</span>
+            <span class="pill">REST API</span>
+            <span class="pill">JWT</span>
+            <span class="pill" data-i18n="portfolio.tags.architecture">Architecture</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        <small>
+          &copy; <span data-i18n="footer.name">Vanhuffel Bart</span>,
+          <span data-i18n="footer.year">2024</span>
+        </small>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/include.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

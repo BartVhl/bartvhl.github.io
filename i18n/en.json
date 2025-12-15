@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "hobbies": "Hobbies",
+    "education": "Education"
+  },
+  "shared": {
+    "splitAlt": "Decorative background"
+  },
+  "footer": {
+    "name": "Vanhuffel Bart",
+    "year": "2024"
+  },
+  "home": {
+    "metaTitle": "Home — Bart",
+    "title": "Vanhuffel<br/>Bart",
+    "intro": "Hey! I’m Bart, a Programming student focused on web development. I like clean interfaces, tidy code, and projects that feel truly finished. Outside of coding, you’ll usually find me hanging out with friends, listening to music, working out, or gaming.",
+    "heroAlt": "Portrait photo of Bart",
+    "educationHeading": "Education",
+    "hobbiesHeading": "Hobbies",
+    "educationAlt": "Programming on a computer",
+    "gamingAlt": "Game controller",
+    "fitnessAlt": "Gym weights"
+  },
+  "hobbies": {
+    "metaTitle": "Hobbies — Bart",
+    "title": "Hobbies",
+    "lead": "Two things that always recharge me: gaming and fitness.",
+    "gamingAlt": "Game controller",
+    "fitnessAlt": "Gym weights"
+  },
+  "gaming": {
+    "metaTitle": "Gaming — Bart",
+    "title": "Gaming",
+    "lead": "Gaming has been a long-time hobby. I play on PC, PlayStation, and Switch, and I especially enjoy fantasy and story-driven games you can really get lost in.",
+    "heroAlt": "Game controller",
+    "whyTitle": "Why gaming?",
+    "whyBody": "I started because my stepfather played a lot, and once I got my hands on the controller as a kid it stuck. For me it’s relaxation, inspiration, and sometimes simply escaping into another world.",
+    "topTitle": "My top 3 games",
+    "rank1": "Bloodborne",
+    "rank2": "Final Fantasy XIV",
+    "rank3": "Persona 3 Reload",
+    "rank1Alt": "Bloodborne cover",
+    "rank2Alt": "Final Fantasy XIV cover",
+    "rank3Alt": "Persona 3 Reload cover",
+    "honorableTitle": "Honorable mentions",
+    "hm": {
+      "bg3": "Baldur’s Gate 3",
+      "cp2077": "Cyberpunk 2077",
+      "dos2": "Divinity: Original Sin 2",
+      "elden": "Elden Ring",
+      "ff16": "Final Fantasy XVI",
+      "mhw": "Monster Hunter World",
+      "oblivion": "The Elder Scrolls IV: Oblivion",
+      "sekiro": "Sekiro: Shadows Die Twice"
+    }
+  },
+  "fitness": {
+    "metaTitle": "Fitness — Bart",
+    "title": "Fitness",
+    "lead": "Fitness is my straightforward way to stay healthy: get stronger, build energy, and keep my mind sharp. It feels great to see progress, even in small steps.",
+    "heroAlt": "Gym weights",
+    "whyTitle": "Why fitness?",
+    "whyBody": "I started because a friend invited me, and it became something that helps me stay disciplined and balanced. I’ve had on-and-off periods, but living close to a gym makes it much easier to train consistently.",
+    "topTitle": "My top exercises",
+    "rank1": "Dumbbell curls",
+    "rank2": "Bench press",
+    "rank3": "Lat pulldown",
+    "rank1Alt": "Dumbbell curl exercise",
+    "rank2Alt": "Bench press exercise",
+    "rank3Alt": "Lat pulldown exercise"
+  },
+  "education": {
+    "metaTitle": "Education — Bart",
+    "title": "Programming<br/>Associate Degree",
+    "body": "I studied programming because I enjoy building digital products. After trying different jobs, I realized I always came back to computers and technology. Software development feels like the perfect mix of creativity and problem-solving.",
+    "heroAlt": "Programming on a computer"
+  },
+  "portfolio": {
+    "metaTitle": "Portfolio — Bart",
+    "badge": "Projects",
+    "title": "Portfolio",
+    "lead": "A selection of projects I’m proud of, focused on what I learned and how I approached the work.",
+    "tags": {
+      "frontend": "Frontend",
+      "architecture": "Architecture"
+    },
+    "projects": {
+      "gleenie": {
+        "name": "Gleenie.org",
+        "imageAlt": "Screenshot of Gleenie.org",
+        "description": "Gleenie.org is a durable programming project built in Laravel with a Tailwind frontend. It was a big learning opportunity on the frontend side: working with UI blocks and implementing from a design document."
+      },
+      "ict21": {
+        "name": "ICT21",
+        "imageAlt": "Screenshot of ICT21",
+        "description": "ICT21 is a Laravel-based project with a CMS system in the backend. Implementing it required a deep understanding of Filament resources. On top of that, I worked with Livewire for the contact form — a new experience I really valued."
+      },
+      "gogomon": {
+        "name": "Gogomon",
+        "imageAlt": "Screenshot of Gogomon",
+        "description": "Gogomon was a fitness mobile/smartwatch app I built in a team. We planned the database and API, researched platforms, and built primarily in .NET MAUI. We also shipped a Wear OS side. We learned a lot about GDPR as well, which was an important learning moment."
+      },
+      "deckbuilder": {
+        "name": "Deckbuilder",
+        "imageAlt": "Screenshot of Deckbuilder",
+        "description": "My Deckbuilder MVC web app was created to learn REST APIs. I worked with request and result models and learned a ton about loose coupling. The app also taught me a lot about sessions and JWT tokens, which I found particularly interesting."
+      }
+    }
+  }
+}

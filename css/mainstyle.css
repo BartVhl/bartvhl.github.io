@@ -1,0 +1,435 @@
+/* =========================
+   Base + Theme
+========================= */
+:root{
+  --bg: #0b1220;
+  --surface: rgba(255,255,255,.06);
+  --surface-2: rgba(255,255,255,.10);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.70);
+  --border: rgba(255,255,255,.12);
+
+  --brand: #64cdff; /* your old blue as accent */
+  --shadow: 0 18px 45px rgba(0,0,0,.35);
+
+  --radius: 18px;
+  --max: 1100px;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  line-height: 1.6;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 20% -10%, rgba(100,205,255,.25), transparent 60%),
+    radial-gradient(700px 420px at 110% 10%, rgba(100,205,255,.12), transparent 55%),
+    var(--bg);
+}
+
+img{ max-width: 100%; display: block; }
+a{ color: inherit; text-decoration: none; }
+p{ margin: 0 0 1rem; color: var(--muted); }
+h1,h2,h3{ margin: 0 0 .75rem; line-height: 1.15; letter-spacing: -0.02em; }
+h1{ font-size: clamp(2rem, 5vw, 3.2rem); }
+h2{ font-size: clamp(1.3rem, 3vw, 1.8rem); }
+small{ color: var(--muted); }
+
+/* =========================
+   Layout helpers
+========================= */
+.container{
+  width: min(var(--max), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section{
+  padding: clamp(2rem, 5vw, 4rem) 0;
+}
+
+.card{
+  background: linear-gradient(180deg, var(--surface), rgba(255,255,255,.03));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.card-pad{ padding: 1.4rem; }
+
+.badge{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .7rem;
+  border-radius: 999px;
+  background: rgba(100,205,255,.15);
+  border: 1px solid rgba(100,205,255,.25);
+  color: rgba(255,255,255,.85);
+  font-size: .9rem;
+}
+
+/* =========================
+   Nav
+========================= */
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11,18,32,.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+nav .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .85rem 0;
+}
+
+nav>a{ display: inline-flex; align-items: center; gap: .6rem; }
+nav img{
+  height: 42px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.nav-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: .9rem;
+  align-items: center;
+}
+
+.nav-list a{
+  padding: .45rem .7rem;
+  border-radius: 999px;
+  color: rgba(255,255,255,.85);
+  font-weight: 650;
+  text-transform: uppercase;
+  font-size: .85rem;
+  letter-spacing: .04em;
+  border: 1px solid transparent;
+}
+
+.nav-list a:hover{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.10);
+}
+
+/* =========================
+   Hero / Headers
+========================= */
+.header,
+.header-secondary{
+  padding: clamp(2rem, 4vw, 3rem) 0;
+}
+
+.header .container,
+.header-secondary .container{
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.header-title{
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.bart-info{
+  width: auto;              /* remove old fixed width */
+  padding: 0;               /* remove old padding */
+  text-align: left;
+}
+
+.header-image,
+.image-left,
+.image-right{
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  height: auto;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+/* =========================
+   “Split” images (make them subtle)
+========================= */
+.split{
+  height: auto;
+  padding: 1.2rem 0;
+}
+.split>img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  opacity: .85;
+}
+
+/* =========================
+   Image navigation tiles
+========================= */
+.image-navigation{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  padding: 2.2rem 0 4rem;
+}
+
+.image-navigation h2{
+  text-align: left;
+  margin-bottom: .8rem;
+}
+
+.image-link{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, filter .18s ease;
+}
+
+.image-link:hover{
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+.image-links-hobbys{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* =========================
+   Hobby pages
+========================= */
+.hobby-content{
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 1.2rem;
+  padding: 2.2rem 0 2.5rem;
+}
+
+.hobby-info{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.4rem;
+}
+
+.hobby-info > *{
+  padding: 0; /* remove old huge padding */
+}
+
+.hobby-ranking{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.4rem;
+}
+
+.hobby-ranking > div{
+  display: grid;
+  gap: .6rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.hobby-ranking img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.hobby-ranking span{
+  color: var(--brand);
+  margin-right: 6px;
+}
+
+.honorable-mentions{
+  padding: 1.5rem 0 4rem;
+}
+
+.honorable-mentions h2{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.honorable-mentions{
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.honorable-mentions img{
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  height: 160px;
+  width: auto;
+  object-fit: cover;
+  display: inline-block;
+  margin: .4rem;
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   Hobbys overview page
+========================= */
+.image-hobbys-nav{
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.image-hobbys-nav img{
+  height: 320px;
+  width: 100%;
+}
+
+/* =========================
+   Tables (opleiding schedule)
+========================= */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
+}
+td, th{
+  padding: .8rem;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.82);
+}
+thead{
+  background: rgba(100,205,255,.12);
+}
+tbody tr:nth-of-type(even){
+  background: rgba(255,255,255,.03);
+}
+tfoot{
+  background: rgba(255,255,255,.05);
+}
+
+/* =========================
+   Footer
+========================= */
+footer{
+  border-top: 1px solid var(--border);
+  background: rgba(11,18,32,.85);
+}
+footer p{
+  margin: 0;
+  padding: 1.2rem 0;
+}
+footer .container{
+  padding: 0;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px){
+  .header .container,
+  .header-secondary .container{
+    grid-template-columns: 1fr;
+  }
+
+  .image-navigation{
+    grid-template-columns: 1fr;
+  }
+
+  .image-links-hobbys{
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-content{
+    grid-template-columns: 1fr;
+  }
+
+  .image-hobbys-nav{
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+.lang{
+  display:flex;
+  gap:.4rem;
+  align-items:center;
+}
+
+.lang-btn{
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.85);
+  border-radius: 999px;
+  padding: .4rem .65rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lang-btn:hover{
+  background: rgba(255,255,255,.10);
+}
+
+.lang-btn.active{
+  border-color: rgba(100,205,255,.35);
+  background: rgba(100,205,255,.15);
+}
+
+.nav-list a[aria-current="page"]{
+  border-color: rgba(100,205,255,.35);
+  background: rgba(100,205,255,.12);
+}
+.portfolio-list{
+  display: grid;
+  gap: 1.2rem;
+}
+
+.portfolio-item{
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: stretch;
+}
+
+.portfolio-media{
+  padding: 1rem;
+}
+
+.portfolio-media img{
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 900px){
+  .portfolio-item{
+    grid-template-columns: 1fr;
+  }
+  .portfolio-media img{
+    min-height: 220px;
+  }
+}
+
