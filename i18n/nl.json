@@ -24,12 +24,34 @@
     "gamingAlt": "Game controller",
     "fitnessAlt": "Fitness gewichten"
   },
-  "hobbies": {
+ "hobbies": {
     "metaTitle": "Hobby’s — Bart",
     "title": "Hobby’s",
     "lead": "Twee dingen waar ik altijd energie uit haal: gamen en fitness.",
     "gamingAlt": "Game controller",
-    "fitnessAlt": "Fitness gewichten"
+    "fitnessAlt": "Fitness gewichten",
+    "other": {
+      "title": "Andere hobby’s",
+      "lead": "Activiteiten die ik naast gamen en fitness graag doe, elk met een andere vorm van ontspanning of focus.",
+      "items": {
+        "dnd": {
+          "title": "D&D Dungeon Master",
+          "body": "Het leiden van campagnes, bouwen van werelden en samen verhalen beleven."
+        },
+        "cardgames": {
+          "title": "Kaartspellen",
+          "body": "Strategische en sociale kaartspellen spelen met vrienden."
+        },
+        "skateboarding": {
+          "title": "Skateboarden",
+          "body": "Een leuke manier om actief te blijven en mijn hoofd leeg te maken."
+        },
+        "cooking": {
+          "title": "Koken",
+          "body": "Experimenteren in de keuken en genieten van het maken van lekker eten."
+        }
+      }
+    }
   },
   "gaming": {
     "metaTitle": "Gaming — Bart",

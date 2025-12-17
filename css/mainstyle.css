@@ -523,5 +523,38 @@ footer{
   }
 }
 
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border-muted); /* keep the grey line */
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.site-footer small {
+  color: var(--text-muted);
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.hobby-item p {
+  margin-top: 0.5rem;
+  max-width: 50ch;
+}
+
+@media (max-width: 900px) {
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 

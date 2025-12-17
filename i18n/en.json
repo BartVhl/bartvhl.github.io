@@ -24,12 +24,34 @@
     "gamingAlt": "Game controller",
     "fitnessAlt": "Gym weights"
   },
-  "hobbies": {
+ "hobbies": {
     "metaTitle": "Hobbies — Bart",
     "title": "Hobbies",
     "lead": "Two things that always recharge me: gaming and fitness.",
     "gamingAlt": "Game controller",
-    "fitnessAlt": "Gym weights"
+    "fitnessAlt": "Gym weights",
+    "other": {
+      "title": "Other hobbies",
+      "lead": "Activities I enjoy alongside gaming and fitness, each offering a different kind of focus or relaxation.",
+      "items": {
+        "dnd": {
+          "title": "D&D Dungeon Master",
+          "body": "Running campaigns, building worlds, and guiding players through collaborative storytelling."
+        },
+        "cardgames": {
+          "title": "Card games",
+          "body": "Enjoying strategic and social card games with friends."
+        },
+        "skateboarding": {
+          "title": "Skateboarding",
+          "body": "A fun way to stay active and clear my head outdoors."
+        },
+        "cooking": {
+          "title": "Cooking",
+          "body": "Experimenting in the kitchen and enjoying the process of creating good food."
+        }
+      }
+    }
   },
   "gaming": {
     "metaTitle": "Gaming — Bart",
