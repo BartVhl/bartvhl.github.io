@@ -35,37 +35,87 @@
 
       <div class="hobby-ranking">
         <h2 data-i18n="gaming.topTitle">Mijn top 3 games</h2>
-        
-        <div class="ranking-one">
-          <img src="../images/blorbe.jpg" alt="" data-i18n-attr="alt:gaming.rank1Alt" />
-          <h3><span>1.</span><span data-i18n="gaming.rank1">Bloodborne</span></h3>
-        </div>
-        <div class="ranking-two">
-          <img src="../images/FFXIV.jpg" alt="" data-i18n-attr="alt:gaming.rank2Alt" />
-          <h3><span>2.</span><span data-i18n="gaming.rank2">Final Fantasy XIV</span></h3>
-        </div>
-        <div class="ranking-three">
-          <img src="../images/p3r.jpg" alt="" data-i18n-attr="alt:gaming.rank3Alt" />
-          <h3><span>3.</span><span data-i18n="gaming.rank3">Persona 3 Reload</span></h3>
+
+        <div class="top3">
+          <article class="top3-item">
+            <h3><span>1.</span><span data-i18n="gaming.rank1">Bloodborne</span></h3>
+            <div class="top3-media">
+              <img src="../images/blorbe.jpg" alt="" data-i18n-attr="alt:gaming.rank1Alt" />
+            </div>
+          </article>
+
+          <article class="top3-item">
+            <h3><span>2.</span><span data-i18n="gaming.rank2">Final Fantasy XIV</span></h3>
+            <div class="top3-media">
+              <img src="../images/FFXIV.jpg" alt="" data-i18n-attr="alt:gaming.rank2Alt" />
+            </div>
+          </article>
+
+          <article class="top3-item">
+            <h3><span>3.</span><span data-i18n="gaming.rank3">Persona 3 Reload</span></h3>
+            <div class="top3-media">
+              <img src="../images/p3r.jpg" alt="" data-i18n-attr="alt:gaming.rank3Alt" />
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="container section honorable-mentions">
-      <h2 data-i18n="gaming.honorableTitle">Honorable mentions</h2>
+    <section class="section">
+      <div class="container">
+        <h2 data-i18n="gaming.honorableTitle">Honorable mentions</h2>
 
-      <img src="../images/BG3.jpg" alt="" data-i18n-attr="alt:gaming.hm.bg3" />
-      <img src="../images/cyberfunky.jpg" alt="" data-i18n-attr="alt:gaming.hm.cp2077" />
-      <img src="../images/Divinity2.jpg" alt="" data-i18n-attr="alt:gaming.hm.dos2" />
-      <img src="../images/Elden.jpg" alt="" data-i18n-attr="alt:gaming.hm.elden" />
-      <img src="../images/FFXVI.jpg" alt="" data-i18n-attr="alt:gaming.hm.ff16" />
-      <img src="../images/MHW.jpg" alt="" data-i18n-attr="alt:gaming.hm.mhw" />
-      <img src="../images/TES4.jpg" alt="" data-i18n-attr="alt:gaming.hm.oblivion" />
+        <div class="honorable-mentions">
+          <img src="../images/BG3.jpg" alt="" data-i18n-attr="alt:gaming.hm.bg3" />
+          <img src="../images/cyberfunky.jpg" alt="" data-i18n-attr="alt:gaming.hm.cp2077" />
+          <img src="../images/Divinity2.jpg" alt="" data-i18n-attr="alt:gaming.hm.dos2" />
+          <img src="../images/Elden.jpg" alt="" data-i18n-attr="alt:gaming.hm.elden" />
+          <img src="../images/FFXVI.jpg" alt="" data-i18n-attr="alt:gaming.hm.ff16" />
+          <img src="../images/MHW.jpg" alt="" data-i18n-attr="alt:gaming.hm.mhw" />
+          <img src="../images/TES4.jpg" alt="" data-i18n-attr="alt:gaming.hm.oblivion" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <div class="card-pad">
+            <h2 data-i18n="hobbies.other.title">Other hobbies</h2>
+            <p data-i18n="hobbies.other.lead"></p>
+
+            <div class="hobbies-grid">
+              <article class="hobby-item">
+                <h3 data-i18n="hobbies.other.items.dnd.title">D&D Dungeon Master</h3>
+                <p data-i18n="hobbies.other.items.dnd.body"></p>
+              </article>
+
+              <article class="hobby-item">
+                <h3 data-i18n="hobbies.other.items.cardgames.title">Card games</h3>
+                <p data-i18n="hobbies.other.items.cardgames.body"></p>
+              </article>
+
+              <article class="hobby-item">
+                <h3 data-i18n="hobbies.other.items.skateboarding.title">Skateboarding</h3>
+                <p data-i18n="hobbies.other.items.skateboarding.body"></p>
+              </article>
+
+              <article class="hobby-item">
+                <h3 data-i18n="hobbies.other.items.cooking.title">Cooking</h3>
+                <p data-i18n="hobbies.other.items.cooking.body"></p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-<div data-include="components/footer.html"></div>
-  <script src="../js/include.js"></script>
-  <script src="../js/i18n.js"></script>
+  <div data-include="components/footer.html"></div>
+
+<script src="../js/include.js"></script>
+<script src="../js/i18n.js"></script>
+<script src="../js/nav.js"></script>
+
 </body>
 </html>

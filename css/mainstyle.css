@@ -15,6 +15,11 @@
   --muted: rgba(255,255,255,.70);
   --border: rgba(255,255,255,.12);
 
+  /* aliases for places you used non-existent vars */
+  --surface-muted: rgba(255,255,255,.06);
+  --text-muted: rgba(255,255,255,.70);
+  --border-muted: rgba(255,255,255,.12);
+
   --brand: #9377ff;
   --shadow: 0 18px 45px rgba(0,0,0,.35);
 
@@ -95,6 +100,19 @@ small{ color: var(--muted); }
 }
 
 /* =========================
+   Accessibility helper
+========================= */
+.sr-only{
+  position:absolute;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* =========================
    Nav
 ========================= */
 nav{
@@ -111,11 +129,36 @@ nav .container{
   align-items: center;
   justify-content: space-between;
   padding: .85rem 0;
+  gap: .75rem;
 }
 
 nav a.brand{
   font-size: 1.3rem;
   font-family: "Martian Mono", monospace, sans-serif;
+}
+
+/* Hamburger (hidden on desktop) */
+.nav-toggle{
+  display:none;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  border-radius: 12px;
+  padding: .55rem .6rem;
+  cursor: pointer;
+  gap: .35rem;
+  align-items: center;
+}
+
+.nav-toggle:hover{
+  background: rgba(255,255,255,.10);
+}
+
+.nav-toggle .bar{
+  display:block;
+  width:22px;
+  height:2px;
+  background: rgba(255,255,255,.85);
+  border-radius: 2px;
 }
 
 .nav-list{
@@ -144,6 +187,38 @@ nav a.brand{
   border-color: rgba(255,255,255,.10);
 }
 
+/* Active */
+.nav-list a[aria-current="page"]{
+  border-color: rgba(100,205,255,.35);
+  background: rgba(100,205,255,.12);
+}
+
+/* Language switch */
+.lang{
+  display:flex;
+  gap:.4rem;
+  align-items:center;
+}
+
+.lang-btn{
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.85);
+  border-radius: 999px;
+  padding: .4rem .65rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lang-btn:hover{
+  background: rgba(255,255,255,.10);
+}
+
+.lang-btn.active{
+  border-color: rgba(100,205,255,.35);
+  background: rgba(100,205,255,.15);
+}
+
 /* =========================
    Hero / Headers
 ========================= */
@@ -162,7 +237,7 @@ nav a.brand{
 
 .header-title{
   letter-spacing: .02em;
-    font-family: "Martian Mono", monospace, sans-serif;
+  font-family: "Martian Mono", monospace, sans-serif;
 }
 
 .bart-info{
@@ -242,6 +317,7 @@ nav a.brand{
   grid-template-columns: .9fr 1.1fr;
   gap: 1.2rem;
   padding: 2.2rem 0 2.5rem;
+  align-items: start;
 }
 
 .hobby-info{
@@ -249,6 +325,8 @@ nav a.brand{
   border-radius: var(--radius);
   background: var(--surface);
   padding: 1.4rem;
+  align-self: start;
+  max-width: 60ch;
 }
 
 .hobby-info > *{
@@ -262,48 +340,71 @@ nav a.brand{
   padding: 1.4rem;
 }
 
-.hobby-ranking > div{
-  display: grid;
-  gap: .6rem;
-  text-align: left;
-  margin-top: 1rem;
-}
-
-.hobby-ranking img{
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-}
-
 .hobby-ranking span{
   color: var(--brand);
   margin-right: 6px;
 }
 
-.honorable-mentions{
-  padding: 1.5rem 0 4rem;
+/* Top 3 (Gaming + Fitness) */
+.top3{
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.honorable-mentions h2{
-  text-align: left;
-  margin-bottom: 1rem;
+.top3-item{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
 }
 
+.top3-item h3{
+  margin: 0;
+  display: flex;
+  gap: .75rem;
+  align-items: baseline;
+}
+
+.top3-media{
+  width: 120px;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: grid;
+  place-items: center;
+}
+
+.top3-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* Honorable mentions */
 .honorable-mentions{
-  width: min(var(--max), calc(100% - 2rem));
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
 }
 
 .honorable-mentions img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 14px;
   border: 1px solid var(--border);
-  height: 160px;
-  width: auto;
-  object-fit: cover;
-  display: inline-block;
-  margin: .4rem;
   box-shadow: var(--shadow);
 }
 
@@ -325,7 +426,7 @@ nav a.brand{
 }
 
 /* =========================
-   Tables (opleiding schedule)
+   Tables
 ========================= */
 table{
   width: 100%;
@@ -356,6 +457,7 @@ tfoot{
 footer{
   border-top: 1px solid var(--border);
   background: rgba(11,18,32,.85);
+  margin-top: 3.5rem;
 }
 footer p{
   margin: 0;
@@ -365,62 +467,25 @@ footer .container{
   padding: 0;
 }
 
+/* Footer component */
+.site-footer{
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  background: rgba(11,18,32,.85);
+}
+.footer-inner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.site-footer small{
+  color: var(--muted);
+}
+
 /* =========================
-   Responsive
+   Portfolio
 ========================= */
-@media (max-width: 900px){
-  .header .container,
-  .header-secondary .container{
-    grid-template-columns: 1fr;
-  }
-
-  .image-navigation{
-    grid-template-columns: 1fr;
-  }
-
-  .image-links-hobbys{
-    grid-template-columns: 1fr;
-  }
-
-  .hobby-content{
-    grid-template-columns: 1fr;
-  }
-
-  .image-hobbys-nav{
-    grid-template-columns: 1fr;
-  }
-}
-
-.lang{
-  display:flex;
-  gap:.4rem;
-  align-items:center;
-}
-
-.lang-btn{
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.06);
-  color: rgba(255,255,255,.85);
-  border-radius: 999px;
-  padding: .4rem .65rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.lang-btn:hover{
-  background: rgba(255,255,255,.10);
-}
-
-.lang-btn.active{
-  border-color: rgba(100,205,255,.35);
-  background: rgba(100,205,255,.15);
-}
-
-.nav-list a[aria-current="page"]{
-  border-color: rgba(100,205,255,.35);
-  background: rgba(100,205,255,.12);
-}
-
 .portfolio-list{
   display: grid;
   gap: 1.2rem;
@@ -453,15 +518,9 @@ footer .container{
   box-shadow: var(--shadow);
 }
 
-@media (max-width: 900px){
-  .portfolio-item{
-    grid-template-columns: 1fr;
-  }
-  .portfolio-media{
-    aspect-ratio: 16 / 9;
-  }
-}
-
+/* =========================
+   Misc layouts
+========================= */
 .skill-grid{
   display:flex;
   flex-wrap: wrap;
@@ -489,72 +548,210 @@ main.container > .section.card:last-of-type{
   margin-bottom: 0;
 }
 
-footer{
-  margin-top: 3.5rem;
-}
-
-.header-grid {
+.header-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
 }
 
-.education-grid {
+.education-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   margin-top: 1.5rem;
 }
 
-.edu-item p {
+.edu-item p{
   margin-top: 0.5rem;
   max-width: 55ch;
 }
 
-@media (max-width: 900px) {
-  .header-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.site-footer {
-  margin-top: 4rem;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--border-muted); /* keep the grey line */
-}
-
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.site-footer small {
-  color: var(--text-muted);
-}
-
-.hobbies-grid {
+.hobbies-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   margin-top: 1.5rem;
 }
 
-.hobby-item p {
+.hobby-item p{
   margin-top: 0.5rem;
   max-width: 50ch;
 }
 
-@media (max-width: 900px) {
-  .hobbies-grid {
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px){
+  /* Headers */
+  .header .container,
+  .header-secondary .container{
     grid-template-columns: 1fr;
+  }
+
+  /* Nav: dropdown */
+  nav .container{
+    position: relative;
+    justify-content: flex-start;
+  }
+
+ /* Hamburger (hidden on desktop) */
+.nav-toggle{
+  display:none;
+  flex-direction: column;       /* ✅ stack the 3 bars */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  border-radius: 12px;
+  padding: .55rem .6rem;
+  cursor: pointer;
+  gap: .35rem;
+}
+
+.nav-toggle:hover{
+  background: rgba(255,255,255,.10);
+}
+
+.nav-toggle .bar{
+  display:block;
+  width:22px;
+  height:2px;
+  background: rgba(255,255,255,.85);
+  border-radius: 2px;
+}
+
+
+  /* Make the menu a dropdown panel */
+  .nav-list{
+    position: absolute;
+    top: calc(100% + .6rem);
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: .35rem;
+
+    padding: .75rem;
+    border-radius: 16px;
+    background: rgba(11,18,32,.92);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-list.is-open{
+    display: flex;
+  }
+
+  .nav-list a{
+    width: 100%;
+    display: block;
+    padding: .75rem .9rem;
+    font-size: .9rem;
+    text-align: left;
+  }
+
+  
+  .lang{
+    margin-left: .5rem;
+  }
+
+  /* Grids */
+  .image-navigation{
+    grid-template-columns: 1fr;
+  }
+
+  .image-links-hobbys{
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-content{
+    grid-template-columns: 1fr;
+  }
+
+  .image-hobbys-nav{
+    grid-template-columns: 1fr;
+  }
+
+  .top3-item{
+    grid-template-columns: 1fr;
+  }
+
+  .top3-media{
+    width: 100%;
+    height: 220px;
+  }
+
+  .portfolio-item{
+    grid-template-columns: 1fr;
+  }
+
+  .header-grid{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .education-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .hobbies-grid{
+    grid-template-columns: 1fr;
+  }
+/* =========================
+   NAV FIX PACK (keep at bottom)
+========================= */
+@media (max-width: 900px){
+
+  nav .nav-toggle{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+
+  nav .nav-list{
+    position: absolute;
+    top: calc(100% + .6rem);
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: .35rem;
+
+    padding: .75rem;
+    border-radius: 16px;
+    background: rgba(11,18,32,.92);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    z-index: 60;
+  }
+
+  nav .nav-list.is-open{
+    display: flex;
+  }
+
+
+  nav .container{
+    position: relative;
+    justify-content: flex-start;
   }
 }
 
+
+nav .nav-toggle .bar{
+  width: 22px;
+  height: 2px;
+  display: block;
+  background: rgba(255,255,255,.85);
+  border-radius: 2px;
+}
+}
 
