@@ -76,7 +76,25 @@
     "metaTitle": "Opleiding — Bart",
     "title": "Graduaat<br/>Programmeren",
     "body": "Ik deed de studie Graduaat Programmeren omdat ik graag bouw aan digitale producten. Na verschillende jobs merkte ik dat ik altijd terugkeerde naar computers en technologie. Software development voelt voor mij als de perfecte mix van creativiteit en logisch denken.",
-    "heroAlt": "Programmeren op computer"
+    "heroAlt": "Programmeren op computer",
+    "other": {
+      "title": "Andere opleidingen",
+      "lead": "Voor ik me volledig op programmeren richtte, verkende ik ook andere richtingen. Die ervaringen helpen nog altijd in hoe ik werk en leer.",
+      "items": {
+        "accounting": {
+          "title": "Accountancy",
+          "body": "Een praktische basis in cijfers, structuur en nauwkeurigheid."
+        },
+        "childcare": {
+          "title": "Kinderbegeleider",
+          "body": "Mensgericht werk dat geduld, verantwoordelijkheid en communicatie versterkte."
+        },
+        "stw": {
+          "title": "Sociale en Technische Wetenschappen",
+          "body": "Een brede achtergrond met zowel sociale thema’s als technisch denken."
+        }
+      }
+    }
   },
   "portfolio": {
     "metaTitle": "Portfolio — Bart",

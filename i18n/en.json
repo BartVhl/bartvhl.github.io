@@ -76,7 +76,25 @@
     "metaTitle": "Education — Bart",
     "title": "Programming<br/>Associate Degree",
     "body": "I studied programming because I enjoy building digital products. After trying different jobs, I realized I always came back to computers and technology. Software development feels like the perfect mix of creativity and problem-solving.",
-    "heroAlt": "Programming on a computer"
+    "heroAlt": "Programming on a computer",
+    "other": {
+      "title": "Other education",
+      "lead": "Before focusing fully on programming, I explored other fields. These experiences helped shape how I work and learn.",
+      "items": {
+        "accounting": {
+          "title": "Accounting",
+          "body": "A practical foundation in numbers, structure, and accuracy."
+        },
+        "childcare": {
+          "title": "Childcare worker",
+          "body": "People-focused work that strengthened patience, responsibility, and communication."
+        },
+        "stw": {
+          "title": "Social Technical Sciences",
+          "body": "A broad background combining social topics with technical thinking."
+        }
+      }
+    }
   },
   "portfolio": {
     "metaTitle": "Portfolio — Bart",
