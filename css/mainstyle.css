@@ -61,7 +61,7 @@ small{ color: var(--muted); }
 }
 
 .section{
-  padding: clamp(2rem, 5vw, 4rem) 0;
+  padding: clamp(2rem, 1vw, 4rem) 0;
 }
 
 .section h1{
