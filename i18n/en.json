@@ -117,11 +117,7 @@
     "lead": "An overview of technologies and concepts I actively work with or have built experience in.",
     "primary": {
       "title": "Primary stack",
-      "description": "Technologies I work with most and can confidently use in real projects."
-    },
-    "secondary": {
-      "title": "Secondary experience",
-      "description": "Technologies I have solid hands-on experience with, but that are not my daily stack."
+      "description": "Technologies I actively use or have solid hands-on experience with in real projects."
     },
     "concepts": {
       "title": "Concepts & practices",

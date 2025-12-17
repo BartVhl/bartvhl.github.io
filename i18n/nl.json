@@ -117,11 +117,7 @@
     "lead": "Een overzicht van technologieën en concepten waar ik actief mee werk of ervaring in heb opgebouwd.",
     "primary": {
       "title": "Primary stack",
-      "description": "Technologieën waar ik het meest mee werk en waar ik direct inzetbaar mee ben in projecten."
-    },
-    "secondary": {
-      "title": "Secondary experience",
-      "description": "Technologieën waarmee ik praktische ervaring heb, maar die niet mijn dagelijkse stack zijn."
+      "description": "Technologieën die ik actief gebruik of waar ik sterke praktijkervaring mee heb in echte projecten."
     },
     "concepts": {
       "title": "Concepten & werkwijzen",
