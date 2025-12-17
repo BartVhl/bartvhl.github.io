@@ -7,7 +7,7 @@ Built with **HTML, CSS, and JavaScript**, featuring a custom component system an
 
 ## About me
 
-Hi, I’m **Bart Vanhuffel** — a junior developer with a strong focus on **web development** and a solid interest in **backend systems and application architecture**.
+Hi, I’m **Bart Vanhuffel** — a junior developer with a strong focus on **full-stack development** and a solid interest in **backend systems and application architecture**.
 
 I enjoy building clean, maintainable applications and learning new technologies through real, hands-on projects. My work ranges from **Laravel-based web platforms** to **.NET and mobile applications**, often involving APIs, CMS systems, and component-driven UI design.
 
