@@ -9,7 +9,7 @@
   --muted: rgba(255,255,255,.70);
   --border: rgba(255,255,255,.12);
 
-  --brand: #64cdff; /* your old blue as accent */
+  --brand: #64cdff;
   --shadow: 0 18px 45px rgba(0,0,0,.35);
 
   --radius: 18px;
@@ -47,6 +47,15 @@ small{ color: var(--muted); }
 
 .section{
   padding: clamp(2rem, 5vw, 4rem) 0;
+}
+
+.section h1{
+  margin-top: 0;
+  margin-bottom: .75rem;
+}
+
+.section p{
+  margin-top: 0;
 }
 
 .card{
@@ -144,8 +153,8 @@ nav img{
 }
 
 .bart-info{
-  width: auto;              /* remove old fixed width */
-  padding: 0;               /* remove old padding */
+  width: auto;
+  padding: 0;
   text-align: left;
 }
 
@@ -230,7 +239,7 @@ nav img{
 }
 
 .hobby-info > *{
-  padding: 0; /* remove old huge padding */
+  padding: 0;
 }
 
 .hobby-ranking{
@@ -367,7 +376,6 @@ footer .container{
   .image-hobbys-nav{
     grid-template-columns: 1fr;
   }
-  
 }
 
 .lang{
@@ -399,9 +407,11 @@ footer .container{
   border-color: rgba(100,205,255,.35);
   background: rgba(100,205,255,.12);
 }
+
 .portfolio-list{
   display: grid;
   gap: 1.2rem;
+  margin-top: 0;
 }
 
 .portfolio-item{
@@ -412,14 +422,18 @@ footer .container{
 
 .portfolio-media{
   padding: 1rem;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
 }
 
 .portfolio-media img{
   width: 100%;
   height: 100%;
-  min-height: 300px;
+  min-height: 0;
   object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: inherit;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
@@ -428,8 +442,8 @@ footer .container{
   .portfolio-item{
     grid-template-columns: 1fr;
   }
-  .portfolio-media img{
-    min-height: 220px;
+  .portfolio-media{
+    aspect-ratio: 16 / 9;
   }
 }
 
@@ -448,4 +462,19 @@ footer .container{
   );
 }
 
+main.container{
+  padding-bottom: 3.5rem;
+}
+
+main.container > .section.card{
+  margin-bottom: 1.6rem;
+}
+
+main.container > .section.card:last-of-type{
+  margin-bottom: 0;
+}
+
+footer{
+  margin-top: 3.5rem;
+}
 
