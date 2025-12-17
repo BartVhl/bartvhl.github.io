@@ -1,4 +1,4 @@
-# bartvhl.github.io
+# Bart’s Portfolio
 
 Personal portfolio website hosted on **GitHub Pages**.  
 Built with **HTML, CSS, and JavaScript**, featuring a custom component system and full **Dutch / English language support**.
