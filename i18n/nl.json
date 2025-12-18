@@ -14,16 +14,18 @@
     "year": "2024"
   },
   "home": {
-    "metaTitle": "Home — Bart",
-    "title": "Vanhuffel<br/>Bart",
-    "intro": "Hey! Ik ben Bart, een programmer met focus op full-stack development. Ik hou van duidelijke interfaces, nette code en projecten die écht af voelen. In mijn vrije tijd ben ik vaak met vrienden op pad, luister ik naar muziek, ga ik sporten of game ik.",
-    "heroAlt": "Portretfoto van Bart",
-    "educationHeading": "Opleiding",
-    "hobbiesHeading": "Hobby’s",
-    "educationAlt": "Programmeren op computer",
-    "gamingAlt": "Game controller",
-    "fitnessAlt": "Fitness gewichten"
-  },
+  "metaTitle": "Home — Bart",
+  "title": "Vanhuffel<br/>Bart",
+  "intro": "Hey! Ik ben Bart, een programmer met focus op full-stack development. Ik hou van duidelijke interfaces, nette code en projecten die écht af voelen. In mijn vrije tijd ben ik vaak met vrienden op pad, luister ik naar muziek, ga ik sporten of game ik.",
+  "linkedinLabel": "Bekijk mijn LinkedIn",
+  "linkedinUrl": "https://www.linkedin.com/in/bart-vanhuffel-6747913a0",
+  "heroAlt": "Portretfoto van Bart",
+  "educationHeading": "Opleiding",
+  "hobbiesHeading": "Hobby’s",
+  "educationAlt": "Programmeren op computer",
+  "gamingAlt": "Game controller",
+  "fitnessAlt": "Fitness gewichten"
+},
  "hobbies": {
     "metaTitle": "Hobby’s — Bart",
     "title": "Hobby’s",

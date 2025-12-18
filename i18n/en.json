@@ -13,17 +13,19 @@
     "name": "Vanhuffel Bart",
     "year": "2024"
   },
-  "home": {
-    "metaTitle": "Home — Bart",
-    "title": "Vanhuffel<br/>Bart",
-    "intro": "Hey! I’m Bart, a programmer focused on full-stack development. I like clean interfaces, tidy code, and projects that feel truly finished. Outside of coding, you’ll usually find me hanging out with friends, listening to music, working out, or gaming.",
-    "heroAlt": "Portrait photo of Bart",
-    "educationHeading": "Education",
-    "hobbiesHeading": "Hobbies",
-    "educationAlt": "Programming on a computer",
-    "gamingAlt": "Game controller",
-    "fitnessAlt": "Gym weights"
-  },
+ "home": {
+  "metaTitle": "Home — Bart",
+  "title": "Vanhuffel<br/>Bart",
+  "intro": "Hey! I’m Bart, a programmer focused on full-stack development. I like clean interfaces, tidy code, and projects that feel truly finished. Outside of coding, you’ll usually find me hanging out with friends, listening to music, working out, or gaming.",
+  "linkedinLabel": "Visit my LinkedIn",
+  "linkedinUrl": "https://www.linkedin.com/in/bart-vanhuffel-6747913a0",
+  "heroAlt": "Portrait photo of Bart",
+  "educationHeading": "Education",
+  "hobbiesHeading": "Hobbies",
+  "educationAlt": "Programming on a computer",
+  "gamingAlt": "Game controller",
+  "fitnessAlt": "Gym weights"
+},
  "hobbies": {
     "metaTitle": "Hobbies — Bart",
     "title": "Hobbies",

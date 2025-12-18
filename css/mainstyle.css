@@ -595,35 +595,36 @@ main.container > .section.card:last-of-type{
     justify-content: flex-start;
   }
 
- /* Hamburger (hidden on desktop) */
-.nav-toggle{
-  display:none;
-  flex-direction: column;       /* ✅ stack the 3 bars */
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.06);
-  border-radius: 12px;
-  padding: .55rem .6rem;
-  cursor: pointer;
-  gap: .35rem;
-}
+  /* Hamburger */
+  nav .nav-toggle{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
 
-.nav-toggle:hover{
-  background: rgba(255,255,255,.10);
-}
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+    border-radius: 12px;
+    padding: .55rem .6rem;
+    cursor: pointer;
+  }
 
-.nav-toggle .bar{
-  display:block;
-  width:22px;
-  height:2px;
-  background: rgba(255,255,255,.85);
-  border-radius: 2px;
-}
+  nav .nav-toggle:hover{
+    background: rgba(255,255,255,.10);
+  }
 
+  nav .nav-toggle .bar{
+    display:block;
+    width:22px;
+    height:2px;
+    background: rgba(255,255,255,.85);
+    border-radius: 2px;
+  }
 
   /* Make the menu a dropdown panel */
-  .nav-list{
+  nav .nav-list{
     position: absolute;
     top: calc(100% + .6rem);
     left: 0;
@@ -639,13 +640,14 @@ main.container > .section.card:last-of-type{
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
     backdrop-filter: blur(10px);
+    z-index: 60;
   }
 
-  .nav-list.is-open{
+  nav .nav-list.is-open{
     display: flex;
   }
 
-  .nav-list a{
+  nav .nav-list a{
     width: 100%;
     display: block;
     padding: .75rem .9rem;
@@ -653,7 +655,6 @@ main.container > .section.card:last-of-type{
     text-align: left;
   }
 
-  
   .lang{
     margin-left: .5rem;
   }
@@ -700,6 +701,7 @@ main.container > .section.card:last-of-type{
   .hobbies-grid{
     grid-template-columns: 1fr;
   }
+}
 /* =========================
    NAV FIX PACK (keep at bottom)
 ========================= */
@@ -752,6 +754,19 @@ nav .nav-toggle .bar{
   display: block;
   background: rgba(255,255,255,.85);
   border-radius: 2px;
+}
+
+.inline-link{
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.inline-link:hover{
+  text-decoration-thickness: 2px;
+}
+.header-text p{
+  max-width: 70ch;
 }
 }
 
